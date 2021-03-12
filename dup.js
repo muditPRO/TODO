@@ -5,12 +5,13 @@ const todolist = document.querySelector(".todo-list");
 todobutton.addEventListener("click", addtodo);
 var array = [];
 function addtodo(event) {
-     event.preventDefault()
-	event.stopImmediatePropagation()
+           
+// 	event.stopImmediatePropagation()
 	console.log(todoinput.value);
      
      
 	if (todoinput.value) {
+		event.preventDefault()
 		array.push(todoinput.value);
 		todoinput.value = "";
 		const todoitem = document.createElement("li");
