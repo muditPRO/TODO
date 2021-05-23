@@ -11,7 +11,7 @@ function addtodo(event) {
      
      
 	if (todoinput.value) {
-		event.preventDefault()
+		event.preventDefault();
 		array.push(todoinput.value);
 		todoinput.value = "";
 		const todoitem = document.createElement("li");
